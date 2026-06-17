@@ -1,1 +1,0 @@
-# promocoes-eletrokasa
