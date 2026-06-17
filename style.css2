@@ -1,0 +1,311 @@
+/*==============================
+MENU INFERIOR
+===============================*/
+
+nav{
+    position:fixed;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:100%;
+    max-width:430px;
+    height:75px;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    box-shadow:0 -5px 20px rgba(0,0,0,.12);
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    z-index:999;
+}
+
+nav button{
+    background:none;
+    border:none;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:#777;
+    font-size:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+nav button i{
+    font-size:23px;
+    margin-bottom:4px;
+}
+
+nav button:hover{
+    color:#0057B8;
+    transform:translateY(-4px);
+}
+
+nav .ativo{
+    color:#0057B8;
+}
+
+/*==============================
+BADGE DE DESCONTO
+===============================*/
+
+.desconto{
+
+position:absolute;
+
+top:15px;
+
+right:15px;
+
+background:#ff3d3d;
+
+color:#fff;
+
+padding:8px 12px;
+
+font-size:13px;
+
+font-weight:bold;
+
+border-radius:30px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+/*==============================
+FAVORITO
+===============================*/
+
+.favorito{
+
+position:absolute;
+
+top:15px;
+
+left:15px;
+
+width:40px;
+
+height:40px;
+
+background:white;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+box-shadow:0 5px 12px rgba(0,0,0,.15);
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.favorito:hover{
+
+background:#ffe000;
+
+transform:scale(1.1);
+
+}
+
+.favorito i{
+
+color:#ff2d55;
+
+font-size:18px;
+
+}
+
+/*==============================
+ANIMAÇÃO DOS CARDS
+===============================*/
+
+.card{
+
+animation:aparecer .5s ease;
+
+position:relative;
+
+}
+
+@keyframes aparecer{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*==============================
+BOTÃO WHATSAPP FLUTUANTE
+===============================*/
+
+.whatsapp{
+
+position:fixed;
+
+right:18px;
+
+bottom:95px;
+
+width:62px;
+
+height:62px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+cursor:pointer;
+
+z-index:998;
+
+transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.1);
+
+}
+
+.whatsapp i{
+
+font-size:30px;
+
+color:white;
+
+}
+
+/*==============================
+SEÇÃO DOS VENDEDORES
+===============================*/
+
+.vendedores{
+
+padding:20px;
+
+margin-bottom:100px;
+
+}
+
+.vendedores h2{
+
+color:#0057B8;
+
+margin-bottom:20px;
+
+}
+
+.vendedor{
+
+background:white;
+
+border-radius:20px;
+
+padding:18px;
+
+margin-bottom:20px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.vendedor h3{
+
+font-size:18px;
+
+}
+
+.vendedor p{
+
+font-size:14px;
+
+color:#666;
+
+margin-top:5px;
+
+}
+
+.vendedor a{
+
+background:#25D366;
+
+color:white;
+
+padding:12px 18px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.vendedor a:hover{
+
+background:#1fa955;
+
+}
+
+/*==============================
+RODAPÉ
+===============================*/
+
+footer{
+
+padding:25px;
+
+text-align:center;
+
+color:#777;
+
+font-size:14px;
+
+margin-bottom:90px;
+
+}
+
+footer strong{
+
+color:#0057B8;
+
+}
